@@ -1,13 +1,726 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    background: #EDF6FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+
+  .writing{
+    width: 106px;
+    height: 106px;
+    margin-left: 650px;
+    margin-top: 100px;
+  }
+
+  .writingSpace{
+    display: none;
+  }
+
+  .writingSpacee p{
+     text-align: left;
+     font: normal normal medium 24px/29px Helvetica Neue;
+     letter-spacing: 0px;
+     color: #43AFFF;
+     opacity: 1;
+     margin-left: 20px;
+     margin-top: -6px;  
+  }
+
+  .writingSpacee span{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .writingSpacee span{
+    margin-left:225px;
+    padding-top:-10px;
+  }
+
+  .writingSpacee h1{
+    text-align: left;
+    font: normal normal normal 14px/20px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    display: inline;
+    margin-left:17px;
+  }
+
+  .writingSpacee{
+    width: 250px;
+    height: 80px;
+    background-color: white;
+    margin-left:1050px;
+    margin-top:-10px;
+    position:absolute;
+    box-shadow: 0px 3px 6px #557DA526;
+    border-radius: 5px;
+    opacity: 1;
+  }
+
+  .writingSpace p{
+    text-align: center;
+    font: normal normal normal 20px/24px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 0.8;
+    margin-left: 50px;
+  }
+
+  .writingSpace button{
+    margin-left: 630px;
+  }
+  
+  .header{
+    background: transparent linear-gradient(253deg, var(--unnamed-color-303f60) 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(253deg, #303F60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height:280px;
+  }
+
+  .jobheader{
+    text-align: left;
+    font: normal normal medium 22px/27px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 20px;
+    margin-left: 170px;
+    padding-top:20px;
+  }
+
+  .form-control1 .errormsg{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left: 158px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .errormsg{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left: 270px;
+  }
+
+  .errormsg-password-reset{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left: 200px;
+    margin-bottom: 20px;
+  }
+
+  .errormsgemail{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left: 365px;
+    padding-top: -10px;
+  }
+
+  .err{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left:370px;
+  }
+  .pwderr{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left:230px;
+  }
+
+  .cpwderr{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left:200px;
+  }
+
+  .nameerr{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left:220px;
+  }
+
+  .titleerr{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left:200px;
+  }
+
+  .descriptionerr{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left:220px;
+  }
+
+  .locationerr{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-left:203px;
+  }
+
+  .btngetstarted{
+    background: var(--unnamed-color-43afff) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-43afff);
+  background: #43AFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #43AFFF;
+  border-radius: 5px;
+  opacity: 1;
+  width: 138px;
+  height: 36px;
+  margin-left: 110px;
+  color: #3d3838;
+  text-align: center;
+  font: normal normal medium 16px/19px Helvetica Neue;
+  margin-top:0px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  }
+  
+  .btn{
+    background: var(--unnamed-color-43afff) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-43afff);
+  background: #43AFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #43AFFF;
+  border-radius: 5px;
+  opacity: 1;
+  width: 138px;
+  height: 36px;
+  margin-left: 170px;
+  color: #3d3838;
+  text-align: center;
+  font: normal normal medium 16px/19px Helvetica Neue;
+  margin-top: 10px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  cursor: pointer;
+  }
+
+  .btn-submit{
+  background: #43AFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #43AFFF;
+  border-radius: 5px;
+  opacity: 1;
+  width: 138px;
+  height: 36px;
+  margin-left: 150px;
+  color: #FFFFFF;
+  text-align: center;
+  font: normal normal medium 16px/19px Helvetica Neue;
+  letter-spacing: 0px;
+  }
+  
+  .container{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 30px 36px #557DA526;
+    border-radius: 20px;
+    opacity: 1;
+    margin-top:-170px;
+    margin-left:440px;
+    height:390px;
+    width:480px;
+  }
+
+  .container-postjob{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 30px 36px #557DA526;
+    border-radius: 20px;
+    opacity: 1;
+    margin-top:-180px;
+    margin-left:440px;
+    min-height:470px;
+    width:480px;
+  }
+
+  .image{
+    box-shadow: 0px 30px 36px #557DA526;
+    border-radius: 20px;
+    opacity: 1;
+    margin-left: 700px;
+    margin-top: -130px;
+  }
+  .child p{
+    text-align: left;
+    font: normal normal normal 14px/20px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:20px;
+   }
+   .company{
+     max-width: 100%;
+     margin-left: 30px;
+   }
+
+   .parent-image{
+       display:flex;
+       flex-wrap: wrap;
+       margin-top: 50px;
+       margin-left:120px;
+       margin-right: 50px;
+   }
+
+   .box-logout{
+     position:absolute;
+     background-color: white;
+     height: 80px;
+     width: 250px;
+     margin-left: 1000px;
+     margin-top:20px;
+   }
+.header2{
+  width: 334px;
+  height: 144px;
+  text-align: left;
+  letter-spacing: 0px;
+   opacity: 1;
+   margin-top:-190px;
+   margin-left:100px;
+}
+.header2 button{
+  margin-left:10px;
+  margin-top:-10px;
+}
+.header2 h1{
+  margin-left:10px;
+  font-size: 45px;
+  margin-top:10px
+}
+.header2 h2{
+  margin-left: 72px;
+  font-size: 45px;
+  margin-top:-54px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header2 div{
+  text-align: left;
+  font: normal normal normal 56px/74px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #FFFFFF;
 }
+   .childimage{
+     height: 110px;
+     width: 220px;
+     margin-left:20px;
+     margin-bottom: 40px;
+     box-shadow: 0px 3px 6px #557DA526;
+     border-radius: 5px;
+     opacity: 0.9;
+   }
+
+  .child div{
+    width: 130px;
+    height: 53px;
+    color: var(--unnamed-color-43afff);
+    text-align: left;
+    font-family:Helvetica Neue;
+    letter-spacing: 0px;
+    color: #43AFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    font-size: 20px;
+    margin-top:20px;
+    margin-left:20px;
+    font-weight:bold;
+  }
+
+  .header button{
+    margin-left: 1105px;
+    margin-top:-20px;
+    color: white;
+    width: 135px;
+    height: 40px;
+    border: 1px solid var(--unnamed-color-43afff);
+    background: #43AFFF33 0% 0% no-repeat padding-box;
+    border: 1px solid #43AFFF;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+  .password-reset-box p{
+    color: var(--unnamed-color-303f60);
+    text-align: left;
+    font: normal normal medium 22px/27px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+  }
+
+  .password-reset-box{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 30px 36px #557DA526;
+    border-radius: 20px;
+    opacity: 1;
+    margin-top:-170px;
+    margin-left:440px;
+    height:350px;
+    width:480px;
+  }
+  .new p{
+    color: var(--unnamed-color-303f60);
+  text-align: center;
+  font: normal normal normal 16px/19px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #303F60;
+  margin-top: 30px;
+  margin-left: -100px;
+  }
+  
+  .new div{
+    color: var(--unnamed-color-43afff);
+  text-align: center;
+  font: normal normal medium 16px/19px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #43AFFF;
+  margin-top:-34px;
+  margin-left:130px;
+  }
+
+  .container-signin{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 30px 36px #557DA526;
+    border-radius: 20px;
+    opacity: 1;
+    margin-top:-220px;
+    margin-left:440px;
+    min-height:650px;
+    width:480px;
+  }
+  .btn-signup{
+    background: #E8E8E833 0% 0% no-repeat padding-box;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px;
+    opacity: 1;
+    width: 126px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+
+  .btn-signup-recruiter{
+    background: var(--unnamed-color-43afff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-43afff);
+    background: #43AFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #43AFFF;
+    border-radius: 5px;
+    opacity: 1;
+    width: 126px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+  .container-signin p{
+    color: var(--unnamed-color-303f60);
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    margin-left: 30px;
+  }
+
+  .passwordchange{
+   margin-left:285px;
+    width: 150px;
+  height: 17px;
+  color: var(--unnamed-color-43afff);
+  text-align: right;
+  font: normal normal medium 14px/17px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #43AFFF;;
+  opacity: 1;
+  margin-bottom:-15px;
+  }
+  h1{
+    width: 31px;
+  height: 26px;
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal bold 22px/27px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  }
+  h2{
+    width: 51px;
+  height: 26px;
+  color: var(--unnamed-color-43afff);
+  text-align: left;
+  font: normal normal bold 22px/27px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #43AFFF;
+  margin-left:32px;
+  margin-top:-40px;
+  }
+  hr{
+    background-color:gray;
+    color:gray;
+    width:1200px;
+  }
+  
+  .form-control{
+    margin: 18px 0;
+  }
+  .form-control-signup{
+    margin: 18px 0;
+  }
+
+  .form-control-signup2 {
+      margin-top:-83px;
+  }
+
+  .form-control-signup2 input {
+    border: 1px solid var(--unnamed-color-43afff);
+   background: #E8E8E833 0% 0% no-repeat padding-box;
+   border: 1px solid #43AFFF;
+    border-radius: 5px;
+  opacity: 1;
+  width: 180px;
+  height: 35px;
+  margin-top:10px;
+  margin-left:250px;
+  }
+  .form-control-signup2 label{
+    color: var(--unnamed-color-303f60);
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    display: block;
+    margin-left:250px;
+  }
+
+  .check div{
+    color: var(--unnamed-color-43afff);
+    text-align: center;
+    font: normal normal medium 16px/19px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #43AFFF;
+    margin-left: 110px;
+    margin-top:-35px;
+  }
+
+  .check p {
+    color: var(--unnamed-color-303f60);
+    text-align: center;
+    font: normal normal normal 16px/19px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    margin-left:-60px;
+    margin-top:20px;
+  }
+
+  .form-control-signup input {
+    border: 1px solid var(--unnamed-color-43afff);
+    background: #E8E8E833 0% 0% no-repeat padding-box;
+    border: 1px solid #43AFFF;
+     border-radius: 5px;
+   opacity: 1;
+   width: 180px;
+   height: 35px;
+   margin-top:10px;
+   margin-left:-100px;
+  }
+  .form-control-signup label{
+    color: var(--unnamed-color-303f60);
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    display: block;
+    margin-left:30px;
+    margin-top:5px;
+  }
+  .form-control input {
+    border: 1px solid var(--unnamed-color-43afff);
+  background: #E8E8E833 0% 0% no-repeat padding-box;
+  border: 1px solid #43AFFF;
+  border-radius: 5px;
+  opacity: 1;
+  width: 400px;
+  height: 35px;
+  margin-left:30px;
+  margin-top:10px;
+  }
+  .form-control textarea {
+    border: 1px solid var(--unnamed-color-43afff);
+  background: #E8E8E833 0% 0% no-repeat padding-box;
+  border: 1px solid #43AFFF;
+  border-radius: 5px;
+  opacity: 1;
+  width: 400px;
+  height: 105px;
+  margin-left:30px;
+  margin-top:10px;
+  }
+  .form-control1 input {
+    background: #E8E8E833 0% 0% no-repeat padding-box;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px;
+    opacity: 1;
+  width: 370px;
+  height: 35px;
+  margin-top:10px;
+  }
+  
+  ::placeholder {
+    color: var(--unnamed-color-303f60);
+  text-align: left;
+  font: normal normal normal 14px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #303F60;
+  opacity: 0.4;
+  padding-top:10px;
+  font-size:14px;
+  padding-left: 10px;
+  }
+  h3{
+    color: var(--unnamed-color-303f60);
+  text-align: left;
+  font: normal normal medium 22px/27px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #303F60;
+  opacity: 1;
+  margin-left:30px;
+  padding-top: 20px;
+  font-size: 23px;
+  }
+  .form-control label {
+    margin-top:5px;
+    display: block;
+    color: var(--unnamed-color-303f60);
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    margin-left:30px;
+  }
+
+  .form-control1 label {
+    margin-top:5px;
+    display: block;
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    margin-top: 10px;
+  }
+
+  .forgot-box{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 30px 36px #557DA526;
+    border-radius: 18px;
+    opacity: 1;
+    margin-top:-180px;
+    margin-left:420px;
+    height:280px;
+    width:450px;
+  }
+
+  .forgot-box p{
+    text-align: left;
+    font: normal normal medium 22px/27px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    padding-top:20px;
+    padding-left: 30px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .forgot-box div{
+    text-align: left;
+    font: normal normal normal 14px/20px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 1;
+    padding-left: 30px;
+  }
+
+  .whyus{
+    margin-left: 140px;
+    font: normal normal medium 27px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-top:50px;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .parent{
+    display:flex;
+    margin-top:50px;
+    margin-left:130px;
+  }
+  
+  .child{
+    width: 341px;
+    height: 192px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #557DA526;
+    border-radius: 5px;
+    opacity: 1;
+    margin:10px;
+  }
+
+  .headerbox{
+    width: 82px;
+    height: 26px;
+    text-align: left;
+    font: normal normal bold 22px/27px Helvetica Neue;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-left:70px;
+    padding-top:5px;
+  }
+
