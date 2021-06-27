@@ -25,7 +25,7 @@ const JobsPosted = () => {
             else{
                 resp.data.data.map((i)=>{
                     console.log(i);
-                    document.getElementById("jobpace").innerHTML += "<div>"+"<h2>"+i.title+"</h2>"+"<p>"+i.description+"</p>"+'<h1><i class="fa fa-map-marker" aria-hidden="true">'+"    "+i.location+"</i></h1>"+`<a><button class="view" id='${i.id}'>View Applications`+"</button></a></div>";
+                    document.getElementById("jobpace").innerHTML += "<div>"+"<h2>"+i.title+"</h2>"+"<p>"+i.description+"</p>"+'<span><h1><i class="fa fa-map-marker" aria-hidden="true">'+""+i.location+"</i></h1>"+`<a><button class="view" id='${i.id}'>View Applications`+"</button></a></span></div>";
                     document.querySelectorAll('.view').forEach(item => {
                         item.addEventListener('click', event => {
                             //console.log(event.target.id);
