@@ -41,6 +41,7 @@ const SignUp = () => {
         }).then(res => res.json())
         .then(resp=>{
            if(resp.success==true){
+               localStorage.setItem("token",resp.data.token);
                history.push('./myjobs');
            }
            else if(!resp.errors){

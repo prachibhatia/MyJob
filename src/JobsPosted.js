@@ -52,7 +52,7 @@ const JobsPosted = () => {
     }
 
     const logout = ()=>{
-        localStorage.clear();
+          localStorage.clear();
           localStorage.setItem("isloggedin","false");
           history.push('./');
     }
