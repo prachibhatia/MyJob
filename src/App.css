@@ -68,6 +68,7 @@
 
   .myjobspace div{
     margin-bottom:50px;
+    padding-bottom:20px;
   }
 
   .myjobspace div h2{
@@ -204,7 +205,7 @@
   }
 
   .myjobspace div button{
-    margin-left: 120px;
+    margin-left: 80px;
     background: #43AFFF33 0% 0% no-repeat padding-box;
     border-radius: 5px;
     opacity: 1;

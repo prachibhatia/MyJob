@@ -71,10 +71,10 @@ body{
   }
   
   .header{
-    background: transparent linear-gradient(253deg, var(--unnamed-color-303f60) 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(253deg, #303F60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     height:280px;
+    width:1350px;
   }
 
   .jobheader{
@@ -428,6 +428,7 @@ body{
     margin-left:440px;
     min-height:650px;
     width:480px;
+    padding-bottom: 20px;
   }
   .btn-signup{
     background: #E8E8E833 0% 0% no-repeat padding-box;
@@ -723,4 +724,30 @@ body{
     margin-left:70px;
     padding-top:5px;
   }
+
+  @media (max-width: 768px) {
+    .parent{
+      display:block;
+      margin-top:30px;
+      margin-left:100px;
+    }
+    .child{
+      padding-top:10px;
+    }
+    .container{
+      margin-left:200px;
+    }
+    .myjobspace div span{
+      display: block;
+    }
+
+    .myjobspace div span button{
+      margin-left:30px;
+    }
+
+    .myjobspace{
+      display:block;
+    }
+  }
+
 
