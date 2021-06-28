@@ -31,6 +31,31 @@ const JobsPosted = () => {
                             //console.log(event.target.id);
                             document.getElementById("myModal").style.display = "block";
 
+                            const res2 = fetch(`https://jobs-api.squareboat.info/api/v1/recruiters/jobs/${event.target.id}/candidates`,{
+                            method:"Get",
+                            headers:{
+                             "Content-Type" : "application/json",
+                             "Authorization":localStorage.getItem("token"),
+                            }
+                           }).then(res2 => res2.json())
+                           .then(resp1=>{
+                               console.log(resp1);
+                            if(resp1.data){
+                                  document.getElementById("applicants").textContent="Total "+ resp1.data.length + " Applications";
+                                  document.getElementById("parent-jobportal").innerHTML="";
+                                  document.getElementById("portal").style.display="block";
+                                  document.getElementById("appdata").style.display="none";
+                                   resp1.data.map((i)=>{
+                                  document.getElementById("parent-jobportal").innerHTML += "<div>"+'<p class="name-candidate"><i class="fa fa-user fa-lg" aria-hidden="true">'+i.name+"</i></p>"+'<p class="email-candidate">'+i.email+"</p>"+'<p class="skills-candidate">Skills</p>'+'<p class="skills-can">'+i.skills+"</p></div>";  
+                                   })
+                               }
+                               else{
+                                document.getElementById("applicants").textContent="0 Applications";
+                                document.getElementById("portal").style.display="none";
+                                document.getElementById("appdata").style.display="block";
+                               }
+                           })
+
                         })
                       })
                 })
@@ -92,9 +117,14 @@ const JobsPosted = () => {
         <div class="modal-header">
         <span className="close" onClick={close} id="closemodal">&times;</span>
          <p>Applicants for this job</p>
-         <span>0 applications</span>
+         <span id="applicants"></span>
         </div>
-        <div className="appdata">
+        <div id="portal">
+        <div className="jobs-candidate" id="parent-jobportal">
+
+        </div>
+        </div>
+        <div className="appdata" id="appdata">
             <img src="./curri.jpg"></img>
             <p>No applications available!</p>
         </div>

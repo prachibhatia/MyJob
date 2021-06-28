@@ -701,7 +701,7 @@ body{
   .parent{
     display:flex;
     margin-top:50px;
-    margin-left:130px;
+    justify-content:center;
   }
   
   .child{

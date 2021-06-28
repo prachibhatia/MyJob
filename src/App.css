@@ -61,6 +61,52 @@
     flex-wrap: wrap;
   }
 
+
+
+  .jobs-candidate div .name-candidate{
+      margin-left:80px;
+      text-align: left;
+      font: normal normal medium 15px/18px Helvetica Neue;
+      letter-spacing: 0px;
+      color: #303F60;
+      opacity:1;
+  }
+
+  .jobs-candidate div .email-candidate{
+    margin-left:80px;
+    text-align: left;
+    font: normal normal normal 15px/17px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+    opacity: 0.8;
+    margin-top:-10px;
+    opacity:1;
+}
+
+.jobs-candidate div .skills-candidate{
+  margin-left:20px;
+  text-align: left;
+  font: normal normal medium 13px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #303F60;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 10px;
+  opacity:1;
+}
+
+.jobs-candidate div .skills-can{
+  margin-left:20px;
+  text-align: left;
+  font: normal normal normal 15px/18px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #303F60;
+  opacity: 0.8;
+  margin-top:-10px;
+  opacity:1;
+}
+
+
   .myjobspace span{
     display: flex;
     margin-top: 60px;
@@ -71,13 +117,14 @@
     padding-bottom:20px;
   }
 
+
   .myjobspace div h2{
     text-align: left;
     font: normal normal normal 17px/20px Helvetica Neue;
     letter-spacing: 0px;
     color: #303F60;
     opacity: 1;
-    width: 121px;
+    width: 100%;
     height: 20px;
     margin-top: 20px;
   }
@@ -186,6 +233,7 @@
     background: #A9AFBC 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 0.5;
+    display: none;
   }
   
   /* The Close Button */
@@ -218,6 +266,39 @@
     margin-top: -30px;
     padding-top: 8px;
     padding-left:10px;
+  }
+
+  .jobs-candidate{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #E6E6E6;
+    opacity:0.7;
+    margin-top:30px;
+  }
+  .jobs-candidate div{
+    width: 302px;
+    height: 159px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #303F6080;
+    border-radius: 5px;
+    opacity: 1;
+    margin:10px;
+  }
+
+  .parent-jobportal div{
+    width: 250px;
+    height: 120px;
+    background-color: ghostwhite;
+    padding:10px;
+  }
+
+  .parent-jobportal{
+    background-color:gainsboro;
+    border-radius: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:20px;
+    margin-left:10px;
   }
 
   .myjobspace div{
