@@ -725,29 +725,4 @@ body{
     padding-top:5px;
   }
 
-  @media (max-width: 768px) {
-    .parent{
-      display:block;
-      margin-top:30px;
-      margin-left:100px;
-    }
-    .child{
-      padding-top:10px;
-    }
-    .container{
-      margin-left:200px;
-    }
-    .myjobspace div span{
-      display: block;
-    }
-
-    .myjobspace div span button{
-      margin-left:30px;
-    }
-
-    .myjobspace{
-      display:block;
-    }
-  }
-
-
+  
