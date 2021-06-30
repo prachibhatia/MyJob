@@ -64,7 +64,7 @@ const Content = () => {
                 document.getElementById("emailerror").textContent = "";
                 document.getElementById("input").style.border = "1px solid #43AFFF";
                 document.getElementById("inputbox").style.border = "1px solid #43AFFF";
-              document.getElementById("errormsg").textContent = resp.errors[0].password;
+                document.getElementById("errormsg").textContent = resp.errors[0].password;
               document.getElementById("emailerror").textContent = resp.errors[1].email;
               document.getElementById("input").style.border = "1px solid #FF333380";
               document.getElementById("inputbox").style.border = "1px solid #FF333380";
